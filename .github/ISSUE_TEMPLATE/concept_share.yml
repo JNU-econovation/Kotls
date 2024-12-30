@@ -1,0 +1,41 @@
+name: 📚 코틀린 개념 이해 공유
+description: 코틀린 개념 중 이해가 어려운 부분을 공유합니다.
+title: "[개념공유] "
+labels: ["질문", "개념공유"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 이해가 어려운 코틀린 개념을 공유해주세요
+        모든 팀원은 해당 개념에 대한 의견을 댓글로 남겨주세요.
+  - type: input
+    id: chapter
+    attributes:
+      label: 관련 챕터
+      placeholder: "예: 2장 - 코틀린 기초"
+    validations:
+      required: true
+  - type: textarea
+    id: content
+    attributes:
+      label: 이해가 어려운 내용
+      description: 이해가 되지 않는 부분을 구체적으로 작성해주세요
+      placeholder: "페이지 번호와 함께 어려운 내용을 상세히 적어주세요."
+    validations:
+      required: true
+  - type: textarea
+    id: code-example
+    attributes:
+      label: 코드 예시
+      description: 관련된 코드가 있다면 작성해주세요
+      placeholder: "```kotlin\n// 예시 코드\n```"
+    validations:
+      required: false
+  - type: textarea
+    id: question
+    attributes:
+      label: 구체적인 질문
+      description: 이해를 위해 궁금한 점들을 작성해주세요
+      placeholder: "질문"
+    validations:
+      required: true

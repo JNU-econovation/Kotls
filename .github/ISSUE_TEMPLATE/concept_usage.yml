@@ -1,0 +1,49 @@
+name: 💡 코틀린 개념 활용 방안
+description: 학습한 코틀린 개념의 활용 방안을 공유합니다.
+title: "[개념활용] "
+labels: ["개념활용", "공유"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 학습한 코틀린 개념의 활용 방안을 공유하는 공간입니다
+        실제 적용 사례와 주의사항을 함께 공유해주세요.
+  - type: input
+    id: chapter
+    attributes:
+      label: 관련 챕터
+      placeholder: "예: 2장 - 코틀린 기초"
+    validations:
+      required: true
+  - type: textarea
+    id: concept
+    attributes:
+      label: 코틀린 개념 설명
+      description: 활용하고자 하는 코틀린 개념을 간단히 설명해주세요
+      placeholder: "해당 개념에 대해 설명해주세요"
+    validations:
+      required: true
+  - type: textarea
+    id: code-example
+    attributes:
+      label: 코드 예시
+      description: 개념을 설명하는 코드 예시를 작성해주세요
+      placeholder: "```kotlin\n// 예시 코드\n```"
+    validations:
+      required: true
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: 활용 사례
+      description: 해당 개념을 어떻게 활용할 수 있는지 설명해주세요
+      placeholder: "실제 적용 가능한 사례들을 작성해주세요"
+    validations:
+      required: true
+  - type: textarea
+    id: anti-patterns
+    attributes:
+      label: 안티패턴
+      description: 해당 개념 사용 시 피해야 할 패턴을 작성해주세요
+      placeholder: "잘못된 사용 예시와 그 이유를 작성해주세요"
+    validations:
+      required: false

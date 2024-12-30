@@ -1,0 +1,35 @@
+name: 🎯 코틀린 모의면접 질문
+description: 코틀린 모의면접 질문을 기록합니다.
+title: "[모의면접] "
+labels: ["면접", "질문답변"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 코틀린 모의면접 질문을 기록하는 공간입니다
+        질문자가 먼저 질문을 작성하고, 면접이 끝난 후:
+        1. 질문자가 댓글로 실제 답변 내용을 기록
+        2. 답변자가 위 댓글을 그대로 두고 해당 댓글에 개선된 답변 작성 
+  - type: input
+    id: chapter
+    attributes:
+      label: 관련 챕터
+      placeholder: "예: 2장 - 코틀린 기초"
+    validations:
+      required: true
+  - type: textarea
+    id: questions
+    attributes:
+      label: 면접 질문
+      description: 준비한 코틀린 관련 면접 질문을 작성해주세요
+      placeholder: "1. 질문"
+    validations:
+      required: true
+  - type: textarea
+    id: code-questions
+    attributes:
+      label: 코드 관련 질문 (선택)
+      description: 코드를 보여주고 설명을 요구하는 질문이 있다면 작성해주세요
+      placeholder: "```kotlin\n// 코드 예시\n```"
+    validations:
+      required: false
